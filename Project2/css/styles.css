@@ -1,0 +1,222 @@
+body{
+    margin: 0;
+    
+}
+
+/*Tạo 1 class container */
+.container {
+    width: 1440px;
+    max-width: 90%;
+    margin: auto;
+    
+    
+}
+
+header {
+    height: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+header section.logo {
+    font-size: 27;
+}
+
+header section.logo span.blue-dot {
+    /*Tạo 1 chấm tròn màu xanh*/
+    background-color: #33C6DD;
+    /*Tạo hình tròn*/
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+/*About us || Promotion|| Contact us*/
+header nav ul {
+    /*bỏ các dấu .*/
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+/*About us || Promotion|| Contact us*/
+/*cho vào 1 line*/
+header nav ul li {
+    display: inline-block;
+    margin-right: 26px;
+}
+
+/*About us || Promotion|| Contact us*/
+header .container {
+    /* Nếu xài float thì đặt ở đây || Nếu là header nav {} */
+    /* float: right; */
+    display: flex;
+    /*height phải = 100 để sử dụng đc align-items , bỏ đi để thấy*/
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Psuedo class hover*/
+/*Chỉnh nwesletter ko có khoản trống bên phải*/
+header nav ul li:last-of-type {
+    margin-right: 0px;
+}
+
+header nav ul li a{
+    color:#3E3E3E;
+    /*Bỏ gạch dưới*/
+    text-decoration: none;
+
+}
+
+/* section.hero {
+    width: 100%;
+    height: 500px; */
+    /*Tạo 1 hình nền*/
+    /* background-image: url('../images/background.jpg'); */
+    /*Tạo hình nền full khi thay đổi size của page */
+    /* background-size: cover; */
+/* } */
+
+/*Đặt section này làm background cho trang web*/
+section.hero{
+    position: relative;
+}
+
+/*Ảnh nền background*/
+section.hero img {
+    width: 100%;
+    height: auto;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/*cho text chung với ảnh nên*/
+section.hero .background-content {
+    position: absolute;
+    top:0;
+    left: 0;   
+    width: 100%;
+    height: 100%;
+}
+
+section.hero .container{
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    
+    height: 100%;
+}
+
+section.hero h1,
+section.hero p {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 20px;
+    max-width: 495;
+}
+
+
+/*Welcome to NamTech*/
+section.hero h1 {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 56px;
+    
+}
+
+/*Techonology*/
+section.hero p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    
+}
+
+/*Button*/
+section.hero button {
+    width: 200px;
+    height: 50px;
+    background-color: #33C6DD;
+    border: 1px solid black;
+    border-radius: 25px;
+    color: white;
+    /*pointer cho phép nhấn vào*/
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/*Best Seller*/
+section.best-sellers {
+    padding-top: 90px;
+}
+
+
+
+/*Best seller title*/
+section.best-sellers h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+}
+
+/*hr*/
+section.best-sellers hr {
+    width: 100px;
+    height: 2px;
+    background-color: #33C6DD;
+    border: none;
+    margin: 0 auto 30px auto;
+}
+
+
+/*========================================================================Product Area=======================================================*/
+section.best-sellers .product-slider .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+section.best-sellers .product-slider .product {
+    border: 1px solid #DDDDDD;
+    border-radius: 8px;
+    margin: 0 10px;
+    text-align: center;
+    width: 33%;
+    padding: 40px 0;
+}
+
+section.best-sellers .product-slider .product img {
+    max-width: 100%;
+}   
+
+section.best-sellers .product-slider .product h5 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 20px 0 10px 0;
+    color: blue;
+}
+
+section.best-sellers .product-slider .product button {
+   height: 50px;
+    width: 100%;
+    background-color: #33C6DD;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+
+
+
+

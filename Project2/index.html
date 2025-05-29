@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home - NamTech Shop</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        
+        <!--[1]Đầu tiên tạo header để cho search engines bik đây là header của website mình-->
+        <header>
+
+            
+            <!--[4]Thêm div cho container -->
+            <div class="container">
+                <!--Nếu xài float thì đặt ở đây-->
+                <!-- <nav>
+                    <ul>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Promotion</a></li>
+                        <li><a href="">Newsletter</a></li>
+                    </ul>
+                </nav> -->
+
+                <!--[2]Thêm section tag thay vì div ở đây vì section đại diện cho 1 are cụ thể vd đây là logo ( 1 phần riêng biệt)-->
+                <!--Syntax viết tag + class = tag_element.class_name -->
+                <section class="logo">
+                    <b>NamTech</b>
+                    <span class="blue-dot"> </span>
+                    <span class="blue-dot"> </span>
+                    <span >Everything intresting about technology</span>
+                </section>
+
+                <!--[3]Tạo navigation để điều hướng page-->
+                <!--Bên trong nav sẽ có các link điều hướng-->
+                <!--Syntax nhanh : nav>ul>li*3>a (Tạo 3 thẻ li)-->
+                <nav>
+                    <ul>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Promotion</a></li>
+                        <li><a href="">Newsletter</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <!--Tạo backgorud hình ảnh + vài text-->
+        <section class="hero">
+            <img src="images/background.jpg" alt="backgorud image">
+                <div class="background-content">
+                    <div class="container">
+                    <h1>Welcome to NamTech</h1>
+                    <p>Technogly - Loyalty - Modern</p>
+
+                    <button>View More</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="best-sellers">
+            <h2>Best Sellers</h2>
+            <hr>
+
+            <!--[5]Tạo 1 div để chứa các sản phẩm -->
+            <div class="product-slider">
+                <div class="container">
+
+                    <div class="product">
+                        <!--Imgae-->
+                        <div class="product-picture">
+                            <img src="images/vr1.jpg" alt="product">
+                        </div>
+                        <!--Name,Brand,Price,Button-->
+                        <h5>Headsets, Apple</h5>
+                        <h4>Apple Headset</h4>
+                        <h3>VND 25.000.000</h3>
+                        <button>
+                            Add to Cart
+                        </button>
+                    </div>
+
+                    <div class="product">
+                        <!--Imgae-->
+                        <div class="product-picture">
+                            <img src="images/vr2.jpg" alt="product">
+                        </div>
+                        <!--Name,Brand,Price,Button-->
+                        <h5>Headsets, Apple</h5>
+                        <h4>Apple Headset</h4>
+                        <h3>VND 25.000.000</h3>
+                        <button>
+                            Add to Cart
+                        </button>
+                    </div>
+
+                    <div class="product">
+                        <!--Imgae-->
+                        <div class="product-picture">
+                            <img src="images/vr3.jpg" alt="product">
+                        </div>
+                        <!--Name,Brand,Price,Button-->
+                        <h5>Headsets, Apple</h5>
+                        <h4>Apple Headset</h4>
+                        <h3>VND 25.000.000</h3>
+                        <button>
+                            Add to Cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </body>
+
+</html>
